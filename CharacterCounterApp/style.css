@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;   /* If this value is not provided, the padding will affect the width and cause layout issues. */
+}
+
+body{
+    background: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    width: 500px;
+    background-color: lightpink;
+    padding: 20px; /* inner spacing */
+    border-radius: 20px;
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+
+textarea{
+    width: 98%;             /* width */
+    height: 150px;          /* height */
+    resize: none;           /* disable resizing */
+    padding: 15px;          /* inner spacing */
+    border-radius: 20px;    /* rounded corners */
+    border: none;           /* remove border */
+    outline: none;          /* remove outline when focused */
+    font-size: 18px;        /* font size */
+}
+
+.counterContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+    font-size: 18px;
+}
+
+.remainingCounter{
+    color: red;
+}
+
+.totalCounter{
+    color: blue;
+}
